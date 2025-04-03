@@ -51,14 +51,51 @@
         </p>
       </article>
     </section>
+
+    <!-- Flight Project Section -->
+    <section class="about-content">
+      <h2>Current Project: Mapping Asian Flight Routes</h2>
+      <figure>
+        <img src="all_flights_screenshot.png" alt="Asian flight routes visualization" />
+        <figcaption>Flight paths across Asia, colored by airline. Built with Vega-Lite and geospatial data.</figcaption>
+      </figure>
+      <article>
+        <p>
+          One of the most exciting projects I’m currently working on is a large-scale data visualization that maps commercial flight routes across Asia. 
+          The goal is to uncover geographic patterns in airline operations — such as which regions are heavily trafficked, how flight time correlates with distance, and how carriers differ in coverage.
+        </p>
+
+        <p>
+          I started by collecting and preprocessing a dataset containing thousands of flight records with detailed attributes like origin and destination coordinates, airline name, estimated distance, and flight time.
+          After cleaning and formatting the data, I used Vega-Lite — a powerful grammar for interactive graphics — to create a layered map projection that plots each route as a curved line between airports. 
+          Airlines are color-coded, and users can hover over routes to view metadata like IATA codes, travel time, and carrier.
+        </p>
+
+        <p>
+          From a technical perspective, the project gave me the opportunity to deepen my understanding of:
+          <ul>
+            <li><strong>Geospatial analysis</strong> — mapping coordinates onto Earth projections and tuning scale/center for legibility</li>
+            <li><strong>Data wrangling</strong> — standardizing IATA codes, removing nulls, filtering by region, and handling multivalued airline fields</li>
+            <li><strong>Declarative visualization</strong> — composing layered Vega-Lite specs for both the world map and flight arcs</li>
+            <li><strong>User experience</strong> — choosing color palettes and interactivity tools that balance aesthetics with clarity</li>
+          </ul>
+        </p>
+
+        <p>
+          The project is still evolving — I’m currently working on adding filters to view routes by country, airline, or distance thresholds. I also plan to integrate airport metadata like city population or elevation to explore possible correlations.
+          You can view the interactive visualization and the full source code on 
+          <a href="https://github.com/ian-menachery" target="_blank">my GitHub</a>.
+        </p>
+      </article>
+    </section>
   </main>
   
   <!-- Footer with Contact Info -->
   <footer id="contact">
     <section class="contact-info">
       <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:your-email@example.com">menachery.i@northeastern.edu</a></p>
-      <p><a href="Ian_resume_updated.pdf" target="_blank">Resume</p>
+      <p>Email: <a href="mailto:menachery.i@northeastern.edu">menachery.i@northeastern.edu</a></p>
+      <p><a href="Ian_resume_updated.pdf" target="_blank">Resume</a></p>
     </section>
   </footer>
 </body>
